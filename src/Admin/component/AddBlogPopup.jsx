@@ -128,13 +128,13 @@ export default function AddBlogPopUp({ isOpen, onClose, blogToEdit, onSuccess })
           <form onSubmit={handleSubmit}>
             <input
               type="text"
-              placeholder="Blog Title"
+              placeholder="Flower Title"
               value={addBlogTitle}
               onChange={(e) => setAddBlogTitle(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3  focus:outline-none focus:border-green-400 addblogpopup-input"
             />
             <textarea
-              placeholder="Blog Content"
+              placeholder="Price"
               value={addBlogParagraph}
               onChange={(e) => setAddBlogParagraph(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3  focus:outline-none focus:border-green-400 addblogpopup-input"
@@ -145,7 +145,7 @@ export default function AddBlogPopUp({ isOpen, onClose, blogToEdit, onSuccess })
               disabled={loading}
               className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition-all addblogpopup-button"
             >
-              {loading ? (blogToEdit ? "Updating..." : "Uploading...") : blogToEdit ? "Update Blog" : "Add Blog"}
+              {loading ? (blogToEdit ? "Updating..." : "Uploading...") : blogToEdit ? "Update Flower" : "Add Flower"}
             </button>
           </form>
         </div>

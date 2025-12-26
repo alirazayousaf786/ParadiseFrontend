@@ -2,12 +2,15 @@ import React from "react";
 import img from "../assets/f1.jpg";
 import img1 from "../assets/f2.jpg";
 import img2 from "../assets/f3.jpg";
-
+import { Link } from "react-router-dom";
 // ✅ Products array
 const products = [
   { id: 1, name: "Gift", img: img, rate: "₹2400" },
   { id: 2, name: "Flower Box", img: img1, rate: "₹1800" },
   { id: 3, name: "Bouquet", img: img2, rate: "₹2200" },
+  { id: 3, name: "Bouquet", img: img2, rate: "₹2200" },
+  { id: 3, name: "Bouquet", img: img2, rate: "₹2200" },
+  
 ];
 
 const Product = () => {
@@ -19,9 +22,9 @@ const Product = () => {
         </h1>
 
         {/* ✅ Single Button on Right */}
-        <button className="px-6 py-3 border-2 border-rose-600 text-rose-600 font-semibold rounded-xl hover:bg-rose-600 hover:text-white transition">
+        <Link to="/product"><button className="px-6 py-3 border-2 border-rose-600 text-rose-600 font-semibold rounded-xl hover:bg-rose-600 hover:text-white transition">
           More Product
-        </button>
+        </button></Link>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">

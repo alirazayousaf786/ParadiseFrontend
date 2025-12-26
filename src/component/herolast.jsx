@@ -1,13 +1,16 @@
 import React from 'react';
 import { Gift, Heart, Cake, Car } from 'lucide-react';
-
+import img from "../assets/f4.jpg"
+import img1 from "../assets/f5.jpg"
+import img3 from "../assets/bridthday-1.jpg"
+import img4 from "../assets/car4.jpg"
 const GiftingGrid = () => {
   const giftCategories = [
     {
       id: 1,
       title: "Anniversary Special",
       description: "Celebrate your love with beautiful flower arrangements",
-      image: "https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=1200&h=800&fit=crop&q=80",
+      image: img,
       icon: Heart,
       color: "rose"
     },
@@ -15,7 +18,7 @@ const GiftingGrid = () => {
       id: 2,
       title: "Perfect Gifts",
       description: "Thoughtful gifts wrapped with love and care",
-      image: "https://images.unsplash.com/photo-1606800059160-4c5c3b0e3e0a?w=1200&h=800&fit=crop&q=80",
+      image: img1,
       icon: Gift,
       color: "pink"
     },
@@ -23,7 +26,7 @@ const GiftingGrid = () => {
       id: 3,
       title: "Birthday Celebration",
       description: "Make their special day memorable with our arrangements",
-      image: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=1200&h=800&fit=crop&q=80",
+      image: img3,
       icon: Cake,
       color: "rose"
     },
@@ -31,7 +34,7 @@ const GiftingGrid = () => {
       id: 4,
       title: "Car Decoration",
       description: "Beautiful flower decorations for your special occasions",
-      image: "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1200&h=800&fit=crop&q=80",
+      image: img4,
       icon: Car,
       color: "pink"
     }
@@ -62,7 +65,7 @@ const GiftingGrid = () => {
                   />
                   
                   {/* Icon */}
-                  <div className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300">
+                  <div className="absolute  top-4 right-4 w-10 h-10 bg-rose-500 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300">
                     <IconComponent className="w-5 h-5 text-white" strokeWidth={1.5} />
                   </div>
                 </div>
@@ -118,7 +121,32 @@ const GiftingGrid = () => {
           }
         }
       `}</style>
+
+
+
+      
+       <div className="mt-16 bg-rose-50 rounded-3xl p-10 shadow-inner">
+        <h3 className="text-3xl font-bold text-rose-700 mb-6 text-center">
+          Service Cities in Pakistan 🇵🇰
+        </h3>
+
+        <p className="text-gray-700 text-lg md:text-xl text-center leading-relaxed">
+          We proudly provide our flower and decoration services in the following cities:
+        </p>
+
+        <div className="mt-6 flex flex-wrap justify-center gap-4 text-rose-700 font-semibold text-lg">
+          <span>•  Arifwala</span>
+          <span>• Pakpattan</span>
+          <span>• Islamabad</span>
+          <span>• Faisalabad</span>
+          <span>• Okara</span>
+          <span>• Sahiwal</span>
+          <span>• Chichawatni</span>
+        </div>
+      </div>
     </div>
+
+    
   );
 };
 

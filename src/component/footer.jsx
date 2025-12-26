@@ -18,8 +18,8 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <span className="text-4xl">🌸</span>
-            <h2 className="text-3xl font-bold text-rose-700">
-              Flower Shop
+            <h2 className="text-2xl font-bold text-rose-700 dancing-heading">
+             Paradise Flower 
             </h2>
           </div>
 
@@ -95,7 +95,7 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="text-center text-sm text-gray-600 py-5 border-t border-rose-200 flex items-center justify-center gap-1">
-        © {new Date().getFullYear()} Flower Shop — Made with 
+        © {new Date().getFullYear()} Paradise Flower Shop — Made with 
         <FaHeart className="text-rose-500 mx-1" /> 
         in Pakistan
       </div>

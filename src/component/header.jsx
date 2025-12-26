@@ -22,8 +22,8 @@ const Header = () => {
                        className="w-20 h-20  object-cover bg-center rounded-full "
                      />
           </div>
-          <span className="text-xl font-bold text-rose-700">
-            Flower Shop
+          <span className="text-3xl font-bold text-rose-700 dancing-heading ">
+            Paradise Flower
           </span>
         </Link>
 

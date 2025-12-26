@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 const PremiumSection = () => {
     return (
       <section className="relative bg-gradient-to-r from-rose-500 to-pink-500 text-white overflow-hidden mt-16 rounded-t-3xl shadow-xl">
@@ -16,14 +17,14 @@ const PremiumSection = () => {
   
         <div className="max-w-7xl mx-auto px-5 py-20 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
-            Go Premium with Flower Shop 🌸
+            Go Premium with Paradise Flower 🌸
           </h2>
           <p className="text-lg md:text-xl mb-8 text-white/90 drop-shadow-sm">
             Experience the finest flower arrangements for every occasion. Fast delivery, fresh flowers, and stunning designs — all in one place.
           </p>
-          <button className="bg-white text-rose-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-2xl hover:bg-white/90 transition transform hover:-translate-y-1">
+          <Link to="/product"><button className="bg-white text-rose-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-2xl hover:bg-white/90 transition transform hover:-translate-y-1">
             Explore Premium
-          </button>
+          </button></Link>
         </div>
   
         {/* Bottom Decorative SVG Curve */}

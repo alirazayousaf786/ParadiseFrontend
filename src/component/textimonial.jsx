@@ -3,26 +3,27 @@ import img from "../assets/image.png"
 import img1 from "../assets/image1.png"
 import img2 from "../assets/image2.png"
 import img3 from "../assets/image3.png"
+
 const testimonials = [
   {
     name: "Sarah Khan",
     message: "Absolutely loved the flower arrangement! Made our anniversary special 🌹",
-    img
+    img: img  
   },
   {
     name: "Ali Raza",
     message: "Best service ever! My wedding decoration looked amazing thanks to Flower Shop 🌸",
-   img1
+    img: img1  
   },
   {
     name: "Fatima Noor",
     message: "High quality flowers and fast delivery. Highly recommend! 💐",
-   img2
+    img: img2  
   },
   {
     name: "Hassan Ali",
     message: "Creative and beautiful flower designs. Will order again! 🌷",
-    img3
+    img: img3  
   },
 ];
 

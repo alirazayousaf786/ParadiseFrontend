@@ -1,45 +1,110 @@
-import React from "react";
-import img from "../assets/f1.jpg";
-import img1 from "../assets/f2.jpg";
-import img2 from "../assets/f3.jpg";
+import { useState } from "react"
+import Follawr from "../component/Follawr.jsx"
+import Mesairi from "../component/Mesairi.jsx"
+import CarDecoration from "../component/CarDecoration.jsx"
+import Bridthday from "../component/Brithday.jsx"
+import Stage from "../component/Stage.jsx"
+import Cack from "../component/Cack.jsx"
+import Jewelry from "../component/Jewelry.jsx"
 
-// ✅ Products array (imported images directly use)
-const products = [
-  { id: 1, name: "Gift", img: img, rate: "₹2400" },
-  { id: 2, name: "Flower Box", img: img1, rate: "₹1800" },
-  { id: 3, name: "Bouquet", img: img2, rate: "₹2200" },
-];
+export default function Products() {
+  const [active, setActive] = useState("follawr")
 
-const Product = () => {
   return (
-    <div className="max-w-7xl mx-auto px-5 py-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-rose-700 text-center mb-12">
-        Our Products 🌸
-      </h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2"
+    <section className="p-4">
+      
+      {/* Buttons */}
+      <div className="flex justify-center">
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mb-6">
+          
+          <button
+            onClick={() => setActive("follawr")}
+            className={`px-8 py-4 text-lg rounded-xl font-semibold transition
+              ${active === "follawr"
+                ? "bg-pink-600 text-white"
+                : "bg-gray-200 hover:bg-gray-300"
+              }`}
           >
-            <img
-              src={product.img}
-              alt={product.name}
-              className="w-full h-52 md:h-64 object-cover"
-            />
+            Bouquet
+          </button>
 
-            <div className="p-4 text-center">
-              <h2 className="text-lg font-semibold text-rose-600 mb-2">
-                {product.name}
-              </h2>
-              <p className="text-gray-700 font-bold">{product.rate}</p>
-            </div>
-          </div>
-        ))}
+          <button
+            onClick={() => setActive("mesairi")}
+            className={`px-8 py-4 text-lg rounded-xl font-semibold transition
+              ${active === "mesairi"
+                ? "bg-pink-600 text-white"
+                : "bg-gray-200 hover:bg-gray-300"
+              }`}
+          >
+            Mesairi Decor
+          </button>
+
+          <button
+            onClick={() => setActive("car")}
+            className={`px-8 py-4 text-lg rounded-xl font-semibold transition
+              ${active === "car"
+                ? "bg-pink-600 text-white"
+                : "bg-gray-200 hover:bg-gray-300"
+              }`}
+          >
+            Car Decor
+          </button>
+
+          <button
+            onClick={() => setActive("birthday")}
+            className={`px-8 py-4 text-lg rounded-xl font-semibold transition
+              ${active === "birthday"
+                ? "bg-pink-600 text-white"
+                : "bg-gray-200 hover:bg-gray-300"
+              }`}
+          >
+            Birthday Decor
+          </button>
+
+          <button
+            onClick={() => setActive("stage")}
+            className={`px-8 py-4 text-lg rounded-xl font-semibold transition
+              ${active === "stage"
+                ? "bg-pink-600 text-white"
+                : "bg-gray-200 hover:bg-gray-300"
+              }`}
+          >
+            Stage Decor
+          </button>
+         <button
+            onClick={() => setActive("cack")}
+            className={`px-8 py-4 text-lg rounded-xl font-semibold transition
+              ${active === "cack"
+                ? "bg-pink-600 text-white"
+                : "bg-gray-200 hover:bg-gray-300"
+              }`}
+          >
+            Cack
+          </button>
+          <button
+            onClick={() => setActive("jewelry")}
+            className={`px-8 py-4 text-lg rounded-xl font-semibold transition
+              ${active === "jewelry"
+                ? "bg-pink-600 text-white"
+                : "bg-gray-200 hover:bg-gray-300"
+              }`}
+          >
+           Jewelry
+          </button>
+        </div>
       </div>
-    </div>
-  );
-};
 
-export default Product;
+      {/* Data Section */}
+      <div className="w-full">
+        {active === "follawr" && <Follawr />}
+        {active === "mesairi" && <Mesairi />}
+        {active === "car" && <CarDecoration />}
+        {active === "birthday" && <Bridthday />}
+        {active === "stage" && <Stage />}  
+        {active === "cack" && <Cack />}  
+        {active === "jewelry" && <Jewelry />}  
+      </div>
+
+    </section>
+  )
+}

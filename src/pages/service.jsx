@@ -88,7 +88,6 @@ const Service = () => {
         ))}
       </div>
 
-      {/* ✅ Updated Last Section */}
       <div className="mt-16 bg-rose-50 rounded-3xl p-10 shadow-inner">
         <h3 className="text-3xl font-bold text-rose-700 mb-6 text-center">
           Service Cities in Pakistan 🇵🇰
@@ -105,7 +104,7 @@ const Service = () => {
           <span>• Faisalabad</span>
           <span>• Okara</span>
           <span>• Sahiwal</span>
-          <span>• Depalpur</span>
+          <span>• ChichaWati</span>
         </div>
       </div>
     </div>
