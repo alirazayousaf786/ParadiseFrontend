@@ -7,7 +7,7 @@ import About from "./pages/About.jsx";
 import Product from "./pages/Product.jsx";
 import Service from "./pages/Service.jsx";
 import Contact from "./pages/Contact.jsx";
-import Whatsapp from "./component/whatsapp.jsx"; // capital W
+import Whatsapp from "./component/Whatsapp.jsx"; // capital W
 
 // Admin Pages
 import Login from "./admin/pages/Login.jsx"; // folder Admin with capital A

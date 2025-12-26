@@ -1,12 +1,12 @@
-import Hero from "../component/hero.jsx";
-import HeroLast from "../component/herolast.jsx";
-import Bunner from "../component/bunner.jsx";
-import ImageGallery from "../component/imagegallery.jsx";
-import Textimonial from "../component/textimonial.jsx";
-import According from "../component/according.jsx";
-import Contact from "../component/contact.jsx";
-import LastPrium from "../component/lastprium.jsx";
-import Product from "../component/product.jsx";
+import Hero from "../component/Hero.jsx";
+import HeroLast from "../component/Herolast.jsx";
+import Bunner from "../component/Bunner.jsx";
+import ImageGallery from "../component/Imagegallery.jsx";
+import Textimonial from "../component/Textimonial.jsx";
+import According from "../component/According.jsx";
+import Contact from "../component/Contact.jsx";
+import LastPrium from "../component/LastPrium.jsx";
+import Product from "../component/Product.jsx";
 
 export default function Home() {
   return (
