@@ -7,22 +7,22 @@ import About from "./pages/About.jsx";
 import Product from "./pages/Product.jsx";
 import Service from "./pages/Service.jsx";
 import Contact from "./pages/Contact.jsx";
-import Whatsapp from "./component/Whatsapp.jsx"; // capital W
+import Whatsapp from "./component/whatsapp.jsx"; // capital W
 
 // Admin Pages
-import Login from "./Admin/pages/Login.jsx"; // folder Admin with capital A
-import Dashboard from "./Admin/pages/Dashboard.jsx";
-import AddFollower from "./Admin/pages/AddFollower.jsx";
-import AddMesairi from "./Admin/pages/AddMesairi.jsx";
-import AddCarDecoration from "./Admin/pages/AddCarDecoration.jsx";
-import AddBridthday from "./Admin/pages/AddBridth.jsx";
-import AddPromotion from "./Admin/pages/PromotionUpdate.jsx";
-import AddStage from "./Admin/pages/AddStage.jsx";
-import AddCack from "./Admin/pages/AddCack.jsx";
-import AddJewelry from "./Admin/pages/AddJewelry.jsx";
+import Login from "./admin/pages/Login.jsx"; // folder Admin with capital A
+import Dashboard from "./admin/pages/Dashboard.jsx";
+import AddFollower from "./admin/pages/AddFollower.jsx";
+import AddMesairi from "./admin/pages/AddMesairi.jsx";
+import AddCarDecoration from "./admin/pages/AddCarDecoration.jsx";
+import AddBridthday from "./admin/pages/AddBridth.jsx";
+import AddPromotion from "./admin/pages/PromotionUpdate.jsx";
+import AddStage from "./admin/pages/AddStage.jsx";
+import AddCack from "./admin/pages/AddCack.jsx";
+import AddJewelry from "./admin/pages/AddJewelry.jsx";
 
-import ProtectedRoute from "./Admin/ProtectedRoute.jsx";
-import AdminLayout from "./Admin/AdminLayout.jsx";
+import ProtectedRoute from "./admin/ProtectedRoute.jsx";
+import AdminLayout from "./admin/AdminLayout.jsx";
 
 function App() {
   return (
