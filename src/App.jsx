@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Website Layout & Pages
-import Layout from "./component/layout/Layout.jsx"; // capital L
+import Layout from "./component/Layout/Layout.jsx"; // capital L
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Product from "./pages/Product.jsx";
