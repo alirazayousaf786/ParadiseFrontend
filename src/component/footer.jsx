@@ -8,6 +8,7 @@ import {
   FaMapMarkerAlt,
   FaHeart,
 } from "react-icons/fa";
+import { SiTiktok } from "react-icons/si"; // TikTok icon
 
 export default function Footer() {
   return (
@@ -19,7 +20,7 @@ export default function Footer() {
           <div className="flex items-center gap-2 mb-4">
             <span className="text-4xl">🌸</span>
             <h2 className="text-2xl font-bold text-rose-700 dancing-heading">
-             Paradise Flower 
+              Paradise Flower
             </h2>
           </div>
 
@@ -31,16 +32,19 @@ export default function Footer() {
           {/* SOCIAL ICONS */}
           <div className="flex gap-4 mt-6">
             {[
-              { icon: <FaFacebookF />, color: "hover:bg-blue-600" },
-              { icon: <FaInstagram />, color: "hover:bg-pink-500" },
-              { icon: <FaTwitter />, color: "hover:bg-sky-500" },
+              { icon: <FaFacebookF />, color: "hover:bg-blue-600", link: "https://www.facebook.com/profile.php?id=61571733101535" },
+              { icon: <FaInstagram />, color: "hover:bg-pink-500", link: "https://www.instagram.com/paradiseflowersahiwal" },
+              { icon: <SiTiktok />, color: "hover:bg-black", link: "https://vt.tiktok.com/ZSPEBcSmr/" },
             ].map((item, i) => (
-              <div
+              <a
                 key={i}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`w-11 h-11 flex items-center justify-center rounded-full bg-white shadow-md text-rose-600 ${item.color} hover:text-white transition cursor-pointer`}
               >
                 {item.icon}
-              </div>
+              </a>
             ))}
           </div>
         </div>
