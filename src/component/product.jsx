@@ -2,14 +2,16 @@ import React from "react";
 import img from "../assets/f1.jpg";
 import img1 from "../assets/f2.jpg";
 import img2 from "../assets/f3.jpg";
+import img3 from "../assets/f4.jpg";
+import img4 from "../assets/f5.jpg";
 import { Link } from "react-router-dom";
-// ✅ Products array
+
 const products = [
   { id: 1, name: "Gift", img: img, rate: "₹2400" },
   { id: 2, name: "Flower Box", img: img1, rate: "₹1800" },
   { id: 3, name: "Bouquet", img: img2, rate: "₹2200" },
-  { id: 3, name: "Bouquet", img: img2, rate: "₹2200" },
-  { id: 3, name: "Bouquet", img: img2, rate: "₹2200" },
+  { id: 3, name: "Bouquet", img: img3, rate: "₹2200" },
+  { id: 3, name: "Bouquet", img: img4, rate: "₹2200" },
   
 ];
 
@@ -21,7 +23,7 @@ const Product = () => {
           Our Products 🌸
         </h1>
 
-        {/* ✅ Single Button on Right */}
+        
         <Link to="/product"><button className="px-6 py-3 border-2 border-rose-600 text-rose-600 font-semibold rounded-xl hover:bg-rose-600 hover:text-white transition">
           More Product
         </button></Link>
