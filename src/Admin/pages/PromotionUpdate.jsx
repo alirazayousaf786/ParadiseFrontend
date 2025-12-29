@@ -99,10 +99,13 @@ const PromotionUpdate = () => {
               onChange={(e) => setCategory(e.target.value)}
               className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:border-rose-500 outline-none transition-all"
             >
-              <option value="blog">📝 Blog</option>
-              <option value="birthday">🎂 Birthday</option>
-              <option value="car">🚗 Car</option>
-              <option value="mesairi">🎁 Mesairi</option>
+              <option value="blog"> Blog</option>
+              <option value="birthday"> Birthday</option>
+              <option value="car"> Car</option>
+              <option value="mesairi"> Mesairi</option>
+              <option value="stage"> Stage</option>
+              <option value="jewelry"> Jewelry</option>
+              <option value="cack"> Cack</option>
             </select>
           </div>
 
